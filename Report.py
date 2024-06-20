@@ -3,9 +3,11 @@
 import yagmail
 import os
 
-f = os.popen("python3 checkin.py", 'r')
-res = f.readlines()
-f.close()
+# f = os.popen("python3 checkin.py", 'r')
+# res = f.readlines()
+# f.close()
+
+res=os.environ['ACT']+"|"+os.environ['PWf']
 
 
 receiver = os.environ['RCV']  # 要接收邮件的邮箱
